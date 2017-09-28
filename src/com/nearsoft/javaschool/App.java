@@ -19,7 +19,7 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
 
         // Create a new parking lot
-        ParkingLot parkingLot = new ParkingLot("Java School", 3);
+        ParkingLot parkingLot = ParkingLot.getParkingLot("Java School", 3);
 
         // Initialize the service to perform operations
         ParkingLotService parkingLotService = new ParkingLotServiceImpl(parkingLot);

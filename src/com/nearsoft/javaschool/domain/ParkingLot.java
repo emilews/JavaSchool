@@ -1,13 +1,22 @@
 package com.nearsoft.javaschool.domain;
 
 public class ParkingLot {
+    private static ParkingLot parkingLotInstance = null;
 
     private Spot[] spots;
     private String name;
 
-    public ParkingLot(String name, int numberOfSpots) {
+    //Singletons hide their constructor.
+    private ParkingLot(String name, int numberOfSpots) {
         this.name = name;
         initializeSpots(numberOfSpots);
+    }
+
+    public static ParkingLot getParkingLot(String name, int numberOfSpots){
+        if(parkingLotInstance == null) {
+            return new ParkingLot(name, numberOfSpots);
+        }
+        return parkingLotInstance;
     }
 
     private void initializeSpots(int numberOfSpots) {
