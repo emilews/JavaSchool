@@ -1,5 +1,7 @@
 package com.nearsoft.javaschool.domain;
 
+import com.nearsoft.javaschool.domain.Vehicles.Vehicle;
+
 import java.time.LocalDateTime;
 
 public class Spot {

@@ -1,6 +1,6 @@
-package com.nearsoft.javaschool.domain;
+package com.nearsoft.javaschool.domain.Vehicles;
 
-import com.nearsoft.javaschool.enums.CarType;
+import com.nearsoft.javaschool.enums.VehicleType;
 
 /**
  * This example shows the interaction with the Constructors
@@ -8,26 +8,26 @@ import com.nearsoft.javaschool.enums.CarType;
  */
 public class Car extends Vehicle {
 
-    private CarType type = CarType.SEDAN;
+    private VehicleType type = VehicleType.SEDAN;
 
     public Car() {
-        this(CarType.SEDAN);
+        this(VehicleType.SEDAN);
     }
 
-    public Car(CarType type) {
+    public Car(VehicleType type) {
         this(type, "UNDEFINED");
     }
 
-    public Car(CarType type, String plates){
+    public Car(VehicleType type, String plates){
         super(4,plates);
         this.type = type;
     }
 
-    public CarType getType() {
+    public VehicleType getType() {
         return type;
     }
 
-    public void setType(CarType type) {
+    public void setType(VehicleType type) {
         this.type = type;
     }
 

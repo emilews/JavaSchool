@@ -2,7 +2,7 @@ package com.nearsoft.javaschool.service.impl;
 
 import com.nearsoft.javaschool.domain.ParkingLot;
 import com.nearsoft.javaschool.domain.Spot;
-import com.nearsoft.javaschool.domain.Vehicle;
+import com.nearsoft.javaschool.domain.Vehicles.Vehicle;
 import com.nearsoft.javaschool.service.ParkingLotService;
 
 import java.time.Duration;

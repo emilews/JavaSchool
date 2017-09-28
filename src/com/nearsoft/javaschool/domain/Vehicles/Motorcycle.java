@@ -1,4 +1,4 @@
-package com.nearsoft.javaschool.domain;
+package com.nearsoft.javaschool.domain.Vehicles;
 
 public class Motorcycle extends Vehicle {
 

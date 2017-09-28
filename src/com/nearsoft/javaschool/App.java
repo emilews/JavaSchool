@@ -1,10 +1,9 @@
 package com.nearsoft.javaschool;
 
-import com.nearsoft.javaschool.domain.Car;
-import com.nearsoft.javaschool.domain.Motorcycle;
 import com.nearsoft.javaschool.domain.ParkingLot;
-import com.nearsoft.javaschool.domain.Vehicle;
-import com.nearsoft.javaschool.enums.CarType;
+import com.nearsoft.javaschool.domain.Vehicles.Vehicle;
+import com.nearsoft.javaschool.domain.Vehicles.VehicleFactory;
+import com.nearsoft.javaschool.enums.VehicleType;
 import com.nearsoft.javaschool.service.ParkingLotService;
 import com.nearsoft.javaschool.service.impl.ParkingLotServiceImpl;
 
@@ -28,10 +27,10 @@ public class App {
 
         //creates vehicles
         List<Vehicle> cars = new ArrayList<>();
-        cars.add(new Car(CarType.SUV));
-        cars.add(new Car(CarType.SEDAN, "UK-2348"));
-        cars.add(new Motorcycle());
-        cars.add(new Car());
+        cars.add(VehicleFactory.getVehicle(VehicleType.SUV));
+        cars.add(VehicleFactory.getVehicle(VehicleType.SEDAN, "UK-2348"));
+        cars.add(VehicleFactory.getVehicle(VehicleType.MOTORCYCLE));
+        cars.add(VehicleFactory.getVehicle(null));
 
         for (Vehicle car : cars) {
 
