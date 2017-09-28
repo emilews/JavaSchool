@@ -1,4 +1,4 @@
-package com.nearsoft.javaschool.domain.Vehicles;
+package com.nearsoft.javaschool.domain.vehicles;
 
 import com.nearsoft.javaschool.enums.VehicleType;
 

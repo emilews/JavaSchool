@@ -1,4 +1,4 @@
-package com.nearsoft.javaschool.domain.Vehicles;
+package com.nearsoft.javaschool.domain.vehicles;
 
 public abstract class Vehicle {
 

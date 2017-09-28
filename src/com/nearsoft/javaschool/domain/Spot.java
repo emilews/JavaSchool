@@ -1,6 +1,6 @@
 package com.nearsoft.javaschool.domain;
 
-import com.nearsoft.javaschool.domain.Vehicles.Vehicle;
+import com.nearsoft.javaschool.domain.vehicles.Vehicle;
 
 import java.time.LocalDateTime;
 

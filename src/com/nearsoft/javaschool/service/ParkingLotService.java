@@ -1,6 +1,6 @@
 package com.nearsoft.javaschool.service;
 
-import com.nearsoft.javaschool.domain.Vehicles.Vehicle;
+import com.nearsoft.javaschool.domain.vehicles.Vehicle;
 
 /**
  * Created by obautista on 9/22/17.
